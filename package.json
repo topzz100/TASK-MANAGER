@@ -1,0 +1,19 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "node js, express app.  REST API, CRUD operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topzz100/TASK-MANAGER.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/topzz100/TASK-MANAGER/issues"
+  },
+  "homepage": "https://github.com/topzz100/TASK-MANAGER#readme"
+}
