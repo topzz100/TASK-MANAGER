@@ -4,7 +4,7 @@
   "description": "node js, express app.  REST API, CRUD operations",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/topzz100/TASK-MANAGER/issues"
   },
-  "homepage": "https://github.com/topzz100/TASK-MANAGER#readme"
+  "homepage": "https://github.com/topzz100/TASK-MANAGER#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
 }
