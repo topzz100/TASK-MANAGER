@@ -5,6 +5,7 @@ const connectDB = require('./database/db')
 
 const PORT = process.env.PORT || 3000
 
+app.use(express.json())
 
 //routes
 app.use('/api/v1/tasks', require('./routes/tasks'))

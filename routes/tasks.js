@@ -1,6 +1,7 @@
 const express = require('express')
 const { getAllTasks, addTask, getTask, deleteTask, updateTask } = require('../controller/tasks')
 const router = express.Router()
+// const Task = require('../database/models/task')
 
 
 // router.get('/', (req, res) => {
