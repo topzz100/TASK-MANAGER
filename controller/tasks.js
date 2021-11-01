@@ -7,19 +7,44 @@ const getAllTasks = async(req, res) => {
   res.status(200).send(tasks)
 }
 const addTask = async(req, res) => {
- const task = await Task.create(req.body)
- res.status(200).json(task)
+  try{
+    const task = await Task.create(req.body)
+    res.status(200).json({task})
+  }catch(err){
+    console.log(err)
+  }
+ 
 }
-const getTask = (req, res) => {
+
+const getTask = async(req, res) => {
+  try{
+    const task = await Task.findOne({_id : req.params.id})
+    res.status(200).json(task)
+  }catch(err){
+    res.send(err)
+  }
+}
+
+const deleteTask = async(req, res) => {  
+  try{
+    const task = await Task.findOneAndDelete({_id :  req.params.id})
+    res.status(200).json({task})
+  }catch(err){
+    res.send(err)
+  }
 
 }
-const deleteTask = (req, res) => {
-  
-const task =Task.findOneAndDelete({_id : req.params.id})
-res.status(200).send(req.params.id)
-}
-const updateTask = (req, res) => {
 
+const updateTask = async(req, res) => {
+   try{
+    const task = await Task.findOneAndUpdate({_id: req.params.id}, req.body, {
+      new: true,
+      runValidators: true
+    })
+    res.status(200).json({task})
+  }catch(err){
+    console.log(err)
+  }
 }
 
 
