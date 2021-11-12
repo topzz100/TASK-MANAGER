@@ -15,19 +15,22 @@
     <div class="container">
       <h3>Task Manager</h3>
       <form action="" class="task-form">
-        <input class="task-input" type="text" placeholder="e.g go to the store"> 
+        <input class="task-input"
+       type="text" value = "" placeholder="e.g go to the store"> 
         <input class="submit-task" type="submit">
       </form>
     </div>
     <div class="tasks">
-      <button class="click">click</button>
       <div class="tasks-items">
-        <p>task loading....</p>
+        <p class="task-entered">task loading....</p>
       </div>
       
       
     </div>
   </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+    integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./editTask.js"></script>
   <script src="./viewTask.js"></script>
 <!-- <script src = "./viewTask.js"> -->
